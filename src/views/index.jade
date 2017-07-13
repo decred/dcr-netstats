@@ -11,7 +11,7 @@ block content
             i.icon-gasprice
           div.big-details-holder
             span.small-title Ticket price
-              span.small 
+              span.small
             span.big-details {{ (bestStats.block.sbits).toString().substr(0,5) }}
               span.smaller-text &nbsp;DCR
           div.clearfix
@@ -20,9 +20,9 @@ block content
           div.pull-left.icon-full-width
               i.icon-clock
           div.big-details-holder
-            span.small-title Price adjusts in 
-              span.small 
-            span.big-details {{144 - bestStats.block.height % 144}} 
+            span.small-title Price adjusts in
+              span.small
+            span.big-details {{144 - bestStats.block.height % 144}}
               span.smaller-text blocks
           div.clearfix
       div.col-xs-3.stat-holder
@@ -40,7 +40,7 @@ block content
             i.icon-gasprice
           div.big-details-holder
             span.small-title Ticket Pool Size
-            span.big-details {{ printablePoolSize }} 
+            span.big-details {{ printablePoolSize }}
               span.smaller-text tickets
           div.clearfix
 
@@ -105,8 +105,8 @@ block content
               span.small-title best block
               span.small-value {{'#'}}{{ bestBlock | number}}
           div.col-xs-3.stat-holder.box
-            div.active-nodes.text-warning
-              i.decred-font-logo A
+            div.active-nodes.text-warning.supply
+              i.dcricon-decred-symbol
               span.small-title available supply
               span.small-value {{ supply }}&nbsp;DCR
           div.col-xs-3.stat-holder.box
